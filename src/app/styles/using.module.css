@@ -1,0 +1,14 @@
+.TextBox {
+  display: flex;
+}
+.blink {
+  animation: blink 1s infinite;
+  font-size: 3rem;
+  margin-left: 10px;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
