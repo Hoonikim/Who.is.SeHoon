@@ -19,9 +19,9 @@ const Intro: React.FC = () => {
       duration: 3,
       scrollTrigger: {
         trigger: Profile,
-        markers: true,
+        markers: false,
         start: 'center, center',
-        end: 'bottom 20%',
+        end: 'bottom 40%',
         scrub: true
       }
     });
