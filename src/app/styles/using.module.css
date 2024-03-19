@@ -11,3 +11,13 @@
     opacity: 0;
   }
 }
+
+.ul {
+  display: flex;
+  position: fixed;
+  top: 10%;
+  left: 5%;
+}
+.ul > .li {
+  margin-right: 10px;
+}

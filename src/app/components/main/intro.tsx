@@ -12,27 +12,17 @@ const Intro: React.FC = () => {
   const ImgRef = useRef(null);
 
   useEffect(() => {
-    // const ani = gsap.timeline();
-    // ani.to('.Intro_Img', { scale: 13 }).to('.Intro_Img', { autoAlpha: 0 });
-
-    // ScrollTrigger.create({
-    //   animation: ani,
-    //   trigger: '.Intro_Section2',
-    //   start: 'top top',
-    //   end: '+=1000',
-    //   scrub: true,
-    //   pin: true,
-    //   markers: true,
-    //   anticipatePin: 1
-    // });
-    const logo = ImgRef.current;
-    gsap.to(logo, {
-      x: '30vw',
+    const Profile = ImgRef.current;
+    gsap.to(Profile, {
+      scale: 5,
+      autoAlpha: 0,
       duration: 3,
       scrollTrigger: {
-        trigger: logo,
+        trigger: Profile,
         markers: true,
-        start: 'center, center'
+        start: 'center, center',
+        end: 'bottom 20%',
+        scrub: true
       }
     });
   }, []);
@@ -47,10 +37,10 @@ const Intro: React.FC = () => {
       <div className={styles.Intro_Section2}>
         <Image
           className='img'
-          src='/main/section1/Test.png'
+          src='/main/section1/Profile.jpg'
           alt='IMG'
-          width='200'
-          height='200'
+          width='280'
+          height='280'
           style={{ borderRadius: '50%' }}
           priority
           quality={100}
