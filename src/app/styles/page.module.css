@@ -9,7 +9,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
+  background-color: #0e0e0e;
+}
+.main3 {
+  display: flex;
+  justify-content: space-around;
+  min-height: 200vh;
+  background-color: black;
+}
 
+.main4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   background-color: #0e0e0e;
 }

@@ -5,6 +5,9 @@ import Intro from './components/main/intro';
 import NavBar from './components/using/NavBar';
 import Trailer from './components/main/trailer';
 import Intro2 from './components/main/intro2';
+import IntroProject from './components/main/introProject';
+import Context from './components/main/context';
+
 export default function Home() {
   return (
     <>
@@ -20,8 +23,11 @@ export default function Home() {
           <Trailer />
         </div>
       </section>
-      <section className={styles.main}>
-        <Intro />
+      <section className={styles.main3}>
+        <IntroProject />
+      </section>
+      <section className={styles.main4}>
+        <Context />
       </section>
     </>
   );

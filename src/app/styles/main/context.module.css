@@ -1,0 +1,39 @@
+.Layout {
+  padding: 10vw 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.Title {
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.Box_Layout {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vw;
+  gap: 40px;
+}
+.subBox_Layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+}
+.Box1 {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.Box2 {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
