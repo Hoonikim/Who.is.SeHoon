@@ -1,5 +1,3 @@
-'use client';
-
 import TypingEffect from '../using/TypingEffect';
 import styles from '../../styles/main/intro.module.css';
 import React, { useEffect, useRef } from 'react';

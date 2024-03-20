@@ -1,5 +1,3 @@
-'use client';
-
 import styles from '../../styles/using.module.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

@@ -1,0 +1,119 @@
+.Trailer_Layout {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Slider_Layout {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.Slider {
+  width: 100%;
+  height: 32vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Slider_Contents {
+  position: relative;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 48vw;
+  height: 30vw;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 220px;
+}
+.SliderTxt {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1;
+}
+.AutoPlay {
+  width: 80px;
+  height: 56px;
+  border-radius: 20px;
+  background-color: rgb(66 66 69 / 70%);
+  margin-left: 20px;
+  cursor: pointer;
+}
+.Paris_Contents {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  line-height: 2;
+}
+.Paris_Content {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+  width: 20px;
+}
+.Next_js {
+  width: 100%;
+  height: auto;
+}
+.workout {
+  width: 17vw;
+  height: 22vw;
+  border-radius: 0 20px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.book1 {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 28vw;
+  z-index: 1;
+}
+.book2 {
+  width: 16vw;
+  height: 22vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.review {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  border-radius: 20px 20px 0 0;
+}
+.sehoon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.Paris_Work {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: 50%;
+}

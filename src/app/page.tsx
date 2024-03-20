@@ -20,6 +20,9 @@ export default function Home() {
           <Trailer />
         </div>
       </section>
+      <section className={styles.main}>
+        <Intro />
+      </section>
     </>
   );
 }
