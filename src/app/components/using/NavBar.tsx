@@ -13,7 +13,7 @@ const NavBar = () => {
       <li className={styles.li}>INTRO</li>
       <li className={styles.li}>PROJECT</li>
       <li className={styles.li}>ABOUT</li>
-      <li className={styles.li}>CONTEXT</li>
+      <li className={styles.li}>CONTACT</li>
     </ul>
   );
 };

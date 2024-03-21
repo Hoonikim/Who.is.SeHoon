@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .Title {
   padding: 10vw 12vw;
@@ -17,40 +18,32 @@
   justify-content: space-around;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .Contents {
   width: 100%;
   position: relative;
-  height: 80vh;
+  height: 80%;
   margin: 10vw 0;
 }
-.Content_Number1 {
-  font-size: 30vw;
-  position: absolute;
-  left: 26%;
-  top: -25%;
-  opacity: 0.07;
-  font-family: 'Lato';
-  font-weight: 100;
-}
+.Content_Number1,
 .Content_Number2 {
   font-size: 30vw;
   position: absolute;
-  right: 26%;
-  top: -25%;
   opacity: 0.07;
   font-family: 'Lato';
   font-weight: 100;
 }
-.Content_Box {
-  margin-top: 8vw;
-  width: 100%;
-  height: 36vw;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+
+.Content_Number1 {
+  left: 26%;
+  top: -25%;
 }
+.Content_Number2 {
+  right: 26%;
+  top: -25%;
+}
+.Content_Box,
 .Content_Box2 {
   margin-top: 8vw;
   width: 100%;
@@ -58,56 +51,97 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+.Content_Box {
+  align-items: flex-end;
+}
+
+.Content_Box2 {
   align-items: flex-start;
+}
+
+.Content_Box :hover,
+.Content_Box2 :hover {
+  filter: brightness(100%);
+  transform: scale(1.01);
+  transition: all 1s;
+}
+
+.Content_Page1,
+.Content_Page2,
+.Content_Page3,
+.Content_Page4 {
+  width: 60%;
+  height: 100%;
+  filter: brightness(23%);
+  transition: all 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.Content_Page1 {
+  background-image: url('https://user-images.githubusercontent.com/104547038/222381715-b6bd5bb2-e57a-4436-b62d-c7c3a17eac46.gif');
+  border-radius: 20px 0 0 20px;
+}
+.Content_Page2 {
+  background-image: url('/main/section3/Helfit_Page.png');
+  border-radius: 0 20px 20px 0;
+}
+.Content_Page3 {
+  background-image: url('https://github.com/OMT-OnMyTicket/OMT/assets/104547038/6290d663-f545-49fa-914f-c2b4b9c640f2');
+  border-radius: 20px 0 0 20px;
+}
+.Content_Page4 {
+  background-image: url('/main/section3/포트폴리오.gif');
+  border-radius: 0 20px 20px 0;
 }
 .Content_Title {
   font-size: 40px;
   margin: 1vw;
 }
-.Content_box1 {
-  width: 60%;
-  height: 100%;
-  background-color: #0e0e0e;
-}
-.Content_Txt {
-  font-size: 50px;
-  font-weight: bold;
-  margin-top: -2.5vw;
-  width: 65%;
-}
 
+.Content_Txt,
 .Content_Txt2 {
   font-size: 50px;
   font-weight: bold;
-  margin-top: -2.5vw;
-  width: 65%;
+  margin-top: -2vw;
+  width: 75%;
+  z-index: 1;
+}
+
+.Content_Txt2 {
   display: flex;
   justify-content: flex-end;
 }
+.Btn {
+  width: 0;
+  height: 3.5vw;
+  background-color: rgb(66 66 69 / 100%);
+  font-size: 0;
+  position: sticky;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s ease, visibility 0.5s ease;
+  border-radius: 20px;
+  visibility: hidden;
+}
 
-/* 
-.Box_Layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 55vw;
-  gap: 40px;
+.Layout:hover .Btn,
+.Btn:focus {
+  width: 15vw;
+  visibility: visible;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  transition: 1s;
 }
-.subBox_Layout {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  gap: 40px;
+
+.Btn:not(:hover) {
+  font-size: 0;
+  width: 0;
+  visibility: hidden;
 }
-.Box1 {
-  background-color: #0e0e0e;
-  width: 100%;
-  height: 100%;
-}
-.Box2 {
-  background-color: #0e0e0e;
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-} */

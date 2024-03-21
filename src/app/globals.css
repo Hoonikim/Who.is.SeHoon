@@ -43,7 +43,7 @@ a {
   width: 208px;
   height: 56px;
   border-radius: 20px;
-  background-color: rgb(66 66 69 / 70%);
+  background-color: rgb(66 66 69 / 100%);
 }
 .dots_custom li button {
   border: none;

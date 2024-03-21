@@ -6,7 +6,7 @@ import NavBar from './components/using/NavBar';
 import Trailer from './components/main/trailer';
 import Intro2 from './components/main/intro2';
 import IntroProject from './components/main/introProject';
-import Context from './components/main/context';
+import Contact from './components/main/contact';
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         <IntroProject />
       </section>
       <section className={styles.main4}>
-        <Context />
+        <Contact />
       </section>
     </>
   );
