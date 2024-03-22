@@ -81,7 +81,20 @@ const IntroProject: React.FC = () => {
 
   return (
     <div className={styles.Layout}>
-      <div className={styles.Title}>Project.</div>
+      <div className={styles.Title_Layout}>
+        <div className={styles.Title}>프로젝트 .</div>
+        <div className={styles.subTitle}>
+          <div className={styles.subTxt}>
+            <p className={styles.point_txt}>23년 첫 프로젝트,</p>
+            <p className={styles.txt}>부딪히고</p>
+          </div>
+          <div className={styles.subTxt}>
+            <p className={styles.txt}>성장하며</p>
+            <p className={styles.point_txt}>현재까지</p>
+            <p className={styles.txt}>진행 중인 프로젝트입니다. </p>
+          </div>
+        </div>
+      </div>
       <div className={styles.Content_Layout}>
         <div className={styles.Contents}>
           <div className={styles.Content_Number1}>01</div>

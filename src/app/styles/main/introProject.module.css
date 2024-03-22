@@ -7,11 +7,35 @@
   height: 100%;
   position: relative;
 }
-.Title {
+
+.Title_Layout {
+  line-height: 1.5;
   padding: 10vw 12vw;
+}
+.Title {
   font-size: 58px;
   font-weight: bold;
 }
+.point_txt {
+  font-size: 40px;
+  color: white;
+}
+.subTitle {
+  margin-top: 2vw;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.txt {
+  color: #949495;
+}
+.subTxt {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
 .Content_Layout {
   display: flex;
   flex-direction: column;

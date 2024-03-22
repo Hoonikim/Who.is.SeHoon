@@ -48,7 +48,7 @@ const TechData = {
   },
   react: {
     url: 'https://techstack-generator.vercel.app/react-icon.svg',
-    progress: 60
+    progress: 50
   },
   nextjs: {
     url: 'https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566879300/noticon/fvty9lnsbjol5lq9u3by.svg',
@@ -61,14 +61,10 @@ const renderLogoWithProgress = (techKeys: (keyof typeof TechData)[]) => {
     const { url, progress } = TechData[techKey];
     return (
       <div className={styles.LogoWrapper} key={index}>
-        <div className={styles.Skill_Name} style={{ color: 'black' }}>
-          {techKey}
-        </div>
+        <div className={styles.Skill_Name}>{techKey}</div>
         <CircularProgressbar className={styles.progressBar} value={progress} />
         <img src={url} alt={`logo-${index}`} className={styles.Skill_logo} />
-        <div className={styles.Skill_Name} style={{ color: 'black' }}>
-          {progress} %
-        </div>
+        <div className={styles.Skill_Name}>{progress} %</div>
       </div>
     );
   });
@@ -87,13 +83,13 @@ const Skill = () => {
       opacity: 1,
       xPercent: 40,
       yPercent: -50,
-
       scrollTrigger: {
         trigger: Box1,
         start: 'top 85%',
-        end: 'end 70%',
+        end: 'bottom 70%',
         scrub: 2,
-        anticipatePin: 1
+        anticipatePin: 1,
+        markers: true
       }
     });
     gsap.to(Box2, {
@@ -103,9 +99,10 @@ const Skill = () => {
       scrollTrigger: {
         trigger: Box2,
         start: 'top 90%',
-        end: 'end 65%',
+        end: 'bottom 65%',
         scrub: 3,
-        anticipatePin: 1
+        anticipatePin: 1,
+        markers: true
       }
     });
     gsap.to(Box3, {
@@ -116,9 +113,10 @@ const Skill = () => {
       scrollTrigger: {
         trigger: Box3,
         start: 'top bottom',
-        end: 'end 80%',
+        end: 'bottom 80%',
         scrub: 4,
-        anticipatePin: 1
+        anticipatePin: 1,
+        markers: true
       }
     });
   }, []);
@@ -126,7 +124,7 @@ const Skill = () => {
   return (
     <div className={styles.Layout}>
       <div className={styles.Content_Title}>
-        <div className={styles.Title}>Skill .</div>
+        <div className={styles.Title}>스킬 .</div>
         <div className={styles.subTitle}>
           <div className={styles.subTxt}>
             <p className={styles.point_txt}>100% </p>
@@ -135,7 +133,7 @@ const Skill = () => {
           <div className={styles.subTxt}>
             <p className={styles.txt}>공부하며</p>
             <p className={styles.point_txt}>꾸준히 도전</p>
-            <p className={styles.txt}>도전해 나가고 있습니다.</p>
+            <p className={styles.txt}>해 나가고 있습니다.</p>
           </div>
         </div>
       </div>

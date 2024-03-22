@@ -7,30 +7,7 @@ const Contact = () => {
         <div> More & More .</div>
       </div>
       <div className={styles.Box_Layout}>
-        <div className={styles.Box1}>
-          <div className={styles.Programming}>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>Javascript</div>
-            <div>Typescript</div>
-          </div>
-          <div className={styles.Library}>
-            <div>React</div>
-            <div>Next.js</div>
-          </div>
-          <div className={styles.Tools}>
-            <div>Git</div>
-            <div>GitHub</div>
-            <div>AWS</div>
-            <div>Vercel</div>
-          </div>
-          <div className={styles.Programming}>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>Javascript</div>
-            <div>Typescript</div>
-          </div>
-        </div>
+        <div className={styles.Box1}></div>
         <div className={styles.subBox_Layout}>
           <div className={styles.Box2}></div>
           <div className={styles.Box2}></div>
