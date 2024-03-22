@@ -10,7 +10,7 @@ interface TechData {
   };
 }
 
-const techData = {
+const TechData = {
   html: {
     url: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png',
     progress: 70
@@ -53,9 +53,9 @@ const techData = {
   }
 };
 
-const renderLogoWithProgress = (techKeys: (keyof typeof techData)[]) => {
+const renderLogoWithProgress = (techKeys: (keyof typeof TechData)[]) => {
   return techKeys.map((techKey, index) => {
-    const { url, progress } = techData[techKey];
+    const { url, progress } = TechData[techKey];
     return (
       <div className={styles.LogoWrapper} key={index}>
         <div className={styles.Skill_Name} style={{ color: 'black' }}>
