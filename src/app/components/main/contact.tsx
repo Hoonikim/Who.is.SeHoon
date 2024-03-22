@@ -15,7 +15,20 @@ const Contact = () => {
             <div>Typescript</div>
           </div>
           <div className={styles.Library}>
+            <div>React</div>
+            <div>Next.js</div>
+          </div>
+          <div className={styles.Tools}>
+            <div>Git</div>
+            <div>GitHub</div>
+            <div>AWS</div>
+            <div>Vercel</div>
+          </div>
+          <div className={styles.Programming}>
             <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div>Typescript</div>
           </div>
         </div>
         <div className={styles.subBox_Layout}>

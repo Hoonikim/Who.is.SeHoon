@@ -1,0 +1,145 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 30vw 0 20vw 0;
+}
+.Content_Title {
+  position: absolute;
+  top: 12%;
+  left: 12vw;
+  line-height: 2;
+}
+.Title {
+  font-size: 58px;
+  font-weight: bold;
+}
+.point_txt {
+  font-size: 40px;
+  color: white;
+}
+.subTitle {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.txt {
+  color: #949495;
+}
+.subTxt {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.Contents {
+  position: relative;
+  margin-top: 5vw;
+}
+.Mac_Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.MacImg {
+  width: 50%;
+  z-index: 2;
+}
+.Mac_topImg {
+  position: absolute;
+  top: 2%;
+  width: 40%;
+  z-index: 1;
+}
+.CodingImg {
+  width: 40%;
+  height: 80%;
+  top: 5.5%;
+  position: absolute;
+  z-index: 1;
+}
+.Programming,
+.Library,
+.Tools {
+  background-color: white;
+  box-shadow: 10px 10px 10px 0px rgba(255, 255, 255, 0.2);
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  z-index: 3;
+}
+.Type1 {
+  position: absolute;
+  top: -22%;
+  right: 0;
+  font-size: 32px;
+  font-weight: 100;
+}
+.Type2 {
+  position: absolute;
+  top: -12%;
+  left: 0;
+  font-size: 32px;
+  font-weight: 100;
+}
+.Programming {
+  right: 4%;
+  top: -45%;
+  width: 40vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vw;
+}
+.Tools {
+  padding-top: 3vw;
+  width: 22vw;
+  height: 25vw;
+  left: 10%;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.Library {
+  width: 20vw;
+  height: 13vw;
+  right: 15%;
+  bottom: -10%;
+}
+.logo_Layout {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.Mac_topImg1 {
+  width: 100%;
+  top: -1%;
+  position: absolute;
+  border-radius: 3px 3px 0 0;
+}
+.Skill_logo {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.LogoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progressBar {
+  width: 7vw;
+  position: relative;
+  margin: 0.5vw 0;
+}

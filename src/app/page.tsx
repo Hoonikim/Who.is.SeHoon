@@ -7,6 +7,7 @@ import Trailer from './components/main/trailer';
 import Intro2 from './components/main/intro2';
 import IntroProject from './components/main/introProject';
 import Contact from './components/main/contact';
+import Skill from './components/main/skill';
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
         <IntroProject />
       </section>
       <section className={styles.main4}>
+        <Skill />
+      </section>
+      <section className={styles.main5}>
         <Contact />
       </section>
     </>
