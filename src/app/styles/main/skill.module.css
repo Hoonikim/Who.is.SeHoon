@@ -11,7 +11,7 @@
   position: absolute;
   top: 12%;
   left: 12vw;
-  line-height: 2;
+  line-height: 1.5;
 }
 .Title {
   font-size: 58px;
@@ -22,6 +22,7 @@
   color: white;
 }
 .subTitle {
+  margin-top: 2vw;
   font-size: 32px;
   font-weight: bold;
   display: flex;
@@ -37,7 +38,7 @@
 }
 .Contents {
   position: relative;
-  margin-top: 5vw;
+  margin-top: 2vw;
 }
 .Mac_Box {
   display: flex;
@@ -75,6 +76,7 @@
   padding: 20px;
   gap: 15px;
   z-index: 3;
+  opacity: 0;
 }
 .Type1 {
   position: absolute;
@@ -91,8 +93,8 @@
   font-weight: 100;
 }
 .Programming {
-  right: 4%;
-  top: -45%;
+  right: 20%;
+  top: 0;
   width: 40vw;
   height: 15vw;
   display: flex;
@@ -103,16 +105,16 @@
   padding-top: 3vw;
   width: 22vw;
   height: 25vw;
-  left: 10%;
-  bottom: 20%;
+  left: 25%;
+  bottom: 0;
   display: flex;
   flex-direction: column;
 }
 .Library {
   width: 20vw;
   height: 13vw;
-  right: 15%;
-  bottom: -10%;
+  right: 30%;
+  bottom: 0;
 }
 .logo_Layout {
   width: 100%;

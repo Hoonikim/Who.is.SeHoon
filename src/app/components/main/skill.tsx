@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from '../../styles/main/skill.module.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 interface TechData {
   [key: string]: {
@@ -72,6 +75,54 @@ const renderLogoWithProgress = (techKeys: (keyof typeof TechData)[]) => {
 };
 
 const Skill = () => {
+  const Box1Ref = useRef(null);
+  const Box2Ref = useRef(null);
+  const Box3Ref = useRef(null);
+
+  useEffect(() => {
+    const Box1 = Box1Ref.current;
+    const Box2 = Box2Ref.current;
+    const Box3 = Box3Ref.current;
+    gsap.to(Box1, {
+      opacity: 1,
+      xPercent: 40,
+      yPercent: -50,
+
+      scrollTrigger: {
+        trigger: Box1,
+        start: 'top 85%',
+        end: 'end 70%',
+        scrub: 2,
+        anticipatePin: 1
+      }
+    });
+    gsap.to(Box2, {
+      opacity: 1,
+      xPercent: -50,
+      yPercent: -20,
+      scrollTrigger: {
+        trigger: Box2,
+        start: 'top 90%',
+        end: 'end 65%',
+        scrub: 3,
+        anticipatePin: 1
+      }
+    });
+    gsap.to(Box3, {
+      opacity: 1,
+      xPercent: 80,
+      yPercent: 30,
+
+      scrollTrigger: {
+        trigger: Box3,
+        start: 'top bottom',
+        end: 'end 80%',
+        scrub: 4,
+        anticipatePin: 1
+      }
+    });
+  }, []);
+
   return (
     <div className={styles.Layout}>
       <div className={styles.Content_Title}>
@@ -109,7 +160,7 @@ const Skill = () => {
         </div>
 
         <div className={styles.Skills}>
-          <div className={styles.Programming}>
+          <div className={styles.Programming} ref={Box1Ref}>
             <div className={styles.Type1}>Programming .</div>
             <img
               className={styles.Mac_topImg1}
@@ -126,7 +177,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className={styles.Tools}>
+          <div className={styles.Tools} ref={Box2Ref}>
             <div className={styles.Type2}>Tools .</div>
             <img
               className={styles.Mac_topImg1}
@@ -141,7 +192,7 @@ const Skill = () => {
             </div>
           </div>
 
-          <div className={styles.Library}>
+          <div className={styles.Library} ref={Box3Ref}>
             <div className={styles.Type1}>Library .</div>
             <img
               className={styles.Mac_topImg1}
