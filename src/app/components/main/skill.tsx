@@ -88,8 +88,7 @@ const Skill = () => {
         start: 'top 85%',
         end: 'bottom 70%',
         scrub: 2,
-        anticipatePin: 1,
-        markers: true
+        anticipatePin: 1
       }
     });
     gsap.to(Box2, {
@@ -101,8 +100,7 @@ const Skill = () => {
         start: 'top 90%',
         end: 'bottom 65%',
         scrub: 3,
-        anticipatePin: 1,
-        markers: true
+        anticipatePin: 1
       }
     });
     gsap.to(Box3, {
@@ -115,8 +113,7 @@ const Skill = () => {
         start: 'top bottom',
         end: 'bottom 80%',
         scrub: 4,
-        anticipatePin: 1,
-        markers: true
+        anticipatePin: 1
       }
     });
   }, []);
