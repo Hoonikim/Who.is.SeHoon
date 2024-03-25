@@ -17,10 +17,9 @@ const Intro: React.FC = () => {
       duration: 3,
       scrollTrigger: {
         trigger: Profile,
-        markers: false,
-        start: 'center, center',
+        start: 'top, center',
         end: 'bottom 40%',
-        scrub: true
+        scrub: 2
       }
     });
   }, []);

@@ -30,10 +30,217 @@
   background-color: #0e0e0e;
   width: 100%;
   height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Box2 {
   background-color: #0e0e0e;
   width: 100%;
   height: 100%;
   border: 1px solid black;
+  padding-left: 3vw;
+}
+.Edu_Content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Years {
+  font-size: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Year {
+  cursor: pointer;
+  width: fit-content;
+  color: gray;
+}
+.Year:hover {
+  color: white;
+  transition-duration: 1s;
+}
+.SelectedYear {
+  color: white;
+  font-weight: bold;
+}
+.Years_Content,
+.EducationDetails {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.EducationDetails {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.EducationDetails > div {
+  animation: flip 1s ease-out forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateX(180deg);
+    animation-timing-function: ease-out;
+  }
+
+  80% {
+    transform: perspective(400px) rotateX(360deg) scale(0.9);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+.수료증 {
+  width: 18vw;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  margin-top: 5px;
+}
+.Year2024 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  height: 50px;
+}
+.Thanks {
+  line-height: 3;
+  font-size: 16px;
+  color: rgb(180, 178, 178);
+}
+.Thanks > div {
+  display: flex;
+  color: gray;
+  align-items: flex-end;
+  gap: 10px;
+}
+.Thanks > div > p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sehoon {
+  height: 130%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.sehoon:hover {
+  height: 140%;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.Click_me {
+  z-index: 2;
+  position: absolute;
+  bottom: 60%;
+  left: 5%;
+}
+
+.MindMap_layout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: unfoldFromLeft 1s ease-out forwards;
+}
+
+@keyframes unfoldFromLeft {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.mindMap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.closeMindMap {
+  position: absolute;
+  left: 0;
+}
+.Box3 {
+  background-color: #0e0e0e;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3vw;
+}
+.Contact_Title {
+  margin-top: 1vw;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.Contact_Box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sehoon2 {
+  position: absolute;
+  height: 120%;
+  right: 0;
+  bottom: 0;
+}
+.Contact_subBox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 17vw;
+  height: 5vw;
+  padding: 30px;
+  box-shadow: 0px 8px 24px rgba(255, 255, 255, 0.2);
+}
+.Contact_Content > div {
+  color: black;
+}
+.Contact_Content > p {
+  color: black;
+  font-weight: 300;
+}
+
+.Contact_icon {
+  width: 3.5vw;
+}
+.icon {
+  width: 2vw;
+}
+.Contact_Content {
+  line-height: 1.5;
+}
+.Contact_Content_Title {
+  font-weight: bold;
 }
