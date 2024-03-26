@@ -50,7 +50,7 @@ const TechData = {
     url: 'https://techstack-generator.vercel.app/react-icon.svg',
     progress: 50
   },
-  nextjs: {
+  Next: {
     url: 'https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566879300/noticon/fvty9lnsbjol5lq9u3by.svg',
     progress: 60
   }
@@ -195,7 +195,7 @@ const Skill = () => {
               alt='맥북IMG'
             />
             <div className={styles.logo_Layout}>
-              {renderLogoWithProgress(['react', 'nextjs'])}
+              {renderLogoWithProgress(['react', 'Next'])}
             </div>
           </div>
         </div>
