@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
 
-## Getting Started
+<div  align="center">
+  <img width="80%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/a87971e2-6e68-4803-a97b-58e80a2bdba0" alt="roobits">
+</div>
 
-First, run the development server:
+- **`프로젝트 명` :** Who is Sehoon
+- **`프로젝트 기간` :** 2024.03.20 - 2024.03.26
+- **`한줄 소개` :** 안녕하세요. 김세훈 포트폴리오 웹 사이트 입니다.
+- **`배포 링크` :** [🌐 Who is sehoon ](https://who-is-se-hoon.vercel.app/)
+- **`작업 깃허브 링크` :**<img alt="github logo" src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/github-icon.svg" width="65" height="65"> [ Who.is.sehoon ](https://github.com/Hoonikim/Who.is.SeHoon)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### ⚙️ **Tools**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+|                                                                                                           Html                                                                                                            |                                                                                                                 CSS                                                                                                                  |                                                                                           TypeScript                                                                                           |                                                                                                   NextJS                                                                                                    |                                                                                                    Figma                                                                                                    |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img alt="Html" src ="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/440px-HTML5_logo_and_wordmark.svg.png" width="65" height="65" /> | <img src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/210204643-4c3d065c-59ec-481d-ac13-cea795730835.png" alt="CSS" width="50" height="65" /> | <img src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/ts-icon.svg" alt="icon" width="65" height="65" /> | <img src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/fvty9lnsbjol5lq9u3by.svg" alt="icon" width="65" height="65" /> | <img src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/tpvr26zp02angin4t0jv.png" alt="icon" width="65" height="65" /> |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+|                                                                                                 Github                                                                                                  |                                                        AOS                                                         |                                                                                              GSAP                                                                                               |                                                                                              esLint                                                                                              |                                             React-Slick                                              |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
+| <img alt="github logo" src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/github-icon.svg" width="65" height="65"> | <img src="https://blog.kakaocdn.net/dn/brhLzG/btqAGYe4pLt/axWzqy9b1LYbW7WQ2MlcR1/img.png" width="65" height="65"/> | <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcVGMuq%2Fbtq1yYt2jhQ%2FLgtwfwen8fxFFzvDX2yWI0%2Fimg.png" width="65" height="65"/> | <img src="../../assets/images/2024-03.26-%E1%84%91%E1%85%A9%E1%84%90%E1%85%B3%E1%84%91%E1%85%A9%E1%86%AF%E1%84%85%E1%85%B5%E1%84%8B%E1%85%A9/c9dgkhp3m5rxmzn3fnp9.png" width="100" height="65"/> | <img src="https://www.scaler.com/topics/images/react-slick_thumbnail.webp" width="100" height="65"/> |
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+#### 🌟 Pages & Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+|                                                      **메인 페이지**                                                      |                                                     **INTRO 페이지**                                                      |
+| :-----------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/a87971e2-6e68-4803-a97b-58e80a2bdba0"/> | <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/f6d42cce-bfd7-4b85-9424-8a8f59596837"/> |
+|                                                    **PROJECT 페이지**                                                     |                                                     **SKILL 페이지**                                                      |
+| <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/a9ba8e31-5cf0-4e07-a73b-2ae5907826f7"/> | <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/89594948-c32c-4df4-9c12-08103b65d438"/> |
+|                                                    **CONTACT 페이지**                                                     |                                                        **GitHub**                                                         |
+| <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/4d5c80f0-7049-401f-9a9f-96cde4e00cf0"/> | <img width="100%" src="https://github.com/Hoonikim/Who.is.SeHoon/assets/104547038/b82b593b-9b75-44d7-a0ab-e6243acc3391"/> |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---

@@ -71,10 +71,18 @@
   width: 100%;
   height: auto;
 }
+.SliderTxt2 {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1;
+}
 .workout {
-  width: 17vw;
-  height: 22vw;
-  border-radius: 0 20px 0 0;
+  width: 40%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
   position: absolute;
   left: 0;
   bottom: 0;

@@ -190,7 +190,7 @@ const Trailer = () => {
                 className={styles.workout}
                 loading='lazy'
               />
-              <div className={styles.SliderTxt}>
+              <div className={styles.SliderTxt2}>
                 자기 계발에 최선을 다합니다.
               </div>
             </div>

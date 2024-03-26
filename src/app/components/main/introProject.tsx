@@ -157,15 +157,17 @@ const IntroProject: React.FC = () => {
         </div>
         <div className={styles.Contents}>
           <div className={styles.Content_Number2}>04</div>
-          <div className={styles.Content_Box2} ref={TxtRef4}>
-            <div className={styles.Content_Title}>04. Portfolio</div>
-            <div
-              className={styles.Content_Page4}
-              onMouseEnter={handleHoverPage4}
-              onMouseLeave={handleLeave}
-            ></div>
-            <div className={styles.Content_Txt2}>그리고 현재의 페이지</div>
-          </div>
+          <Link href={'https://github.com/Hoonikim/Who.is.SeHoon'}>
+            <div className={styles.Content_Box2} ref={TxtRef4}>
+              <div className={styles.Content_Title}>04. Portfolio</div>
+              <div
+                className={styles.Content_Page4}
+                onMouseEnter={handleHoverPage4}
+                onMouseLeave={handleLeave}
+              ></div>
+              <div className={styles.Content_Txt2}>그리고 현재의 페이지</div>
+            </div>
+          </Link>
         </div>
       </div>
       <button className={styles.Btn} ref={BtnRef} onMouseLeave={handleLeave}>
