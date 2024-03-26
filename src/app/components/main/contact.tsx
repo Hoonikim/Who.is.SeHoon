@@ -27,7 +27,7 @@ const Contact = () => {
         <div className={styles.Box1}>
           <img
             className={styles.sehoon}
-            src='/main/contact/세훈1.png'
+            src='/main/contact/세훈.png'
             alt='세훈'
             onClick={handleImageClick} // 이미지 클릭 시 이벤트 핸들러 호출
           />
@@ -192,7 +192,7 @@ const Contact = () => {
             </div>
             <img
               className={styles.sehoon2}
-              src='/main/contact/세훈2.PNG'
+              src='/main/contact/세훈sub.png'
               alt='세훈'
             />
           </div>

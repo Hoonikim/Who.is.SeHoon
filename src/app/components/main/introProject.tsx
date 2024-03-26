@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
 gsap.registerPlugin(ScrollTrigger);
 import styles from '../../styles/main/introProject.module.css';
 
@@ -98,45 +99,61 @@ const IntroProject: React.FC = () => {
       <div className={styles.Content_Layout}>
         <div className={styles.Contents}>
           <div className={styles.Content_Number1}>01</div>
-          <div className={styles.Content_Box} ref={TxtRef1}>
-            <div className={styles.Content_Title}>01. StackOverFlow</div>
-            <div
-              className={styles.Content_Page1}
-              onMouseEnter={handleHoverPage1}
-              onMouseLeave={handleLeave}
-            ></div>
-            <div className={styles.Content_Txt}>
-              Stack Over Flow 구현 프로젝트
+          <Link
+            href={'https://hoonikim.github.io/%ED%9A%8C%EA%B3%A0/PreProject/'}
+          >
+            <div className={styles.Content_Box} ref={TxtRef1}>
+              <div className={styles.Content_Title}>01. StackOverFlow</div>
+              <div
+                className={styles.Content_Page1}
+                onMouseEnter={handleHoverPage1}
+                onMouseLeave={handleLeave}
+              ></div>
+              <div className={styles.Content_Txt}>
+                Stack Over Flow 구현 프로젝트
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className={styles.Contents}>
           <div className={styles.Content_Number2}>02</div>
-          <div className={styles.Content_Box2} ref={TxtRef2}>
-            <div className={styles.Content_Title}>02. HelFit</div>
-            <div
-              className={styles.Content_Page2}
-              onMouseEnter={handleHoverPage2}
-              onMouseLeave={handleLeave}
-            ></div>
-            <div className={styles.Content_Txt2}>
-              유저 데이터 기반의 헬스 종합 플랫폼
+          <Link
+            href={
+              'https://hoonikim.github.io/helfit/%ED%9A%8C%EA%B3%A0/MainREDME/'
+            }
+          >
+            <div className={styles.Content_Box2} ref={TxtRef2}>
+              <div className={styles.Content_Title}>02. HelFit</div>
+              <div
+                className={styles.Content_Page2}
+                onMouseEnter={handleHoverPage2}
+                onMouseLeave={handleLeave}
+              ></div>
+              <div className={styles.Content_Txt2}>
+                유저 데이터 기반의 헬스 종합 플랫폼
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className={styles.Contents}>
           <div className={styles.Content_Number1}>03</div>
-          <div className={styles.Content_Box} ref={TxtRef3}>
-            <div className={styles.Content_Title}>03. OnMyTicket</div>
-            <div
-              className={styles.Content_Page3}
-              onMouseEnter={handleHoverPage3}
-              onMouseLeave={handleLeave}
-            ></div>
-            <div className={styles.Content_Txt}>
-              나만의 티켓, 예매 등 영화 종합 플랫폼
+          <Link
+            href={
+              'https://hoonikim.github.io/omt/%ED%9A%8C%EA%B3%A0/OMT_Readme/'
+            }
+          >
+            <div className={styles.Content_Box} ref={TxtRef3}>
+              <div className={styles.Content_Title}>03. OnMyTicket</div>
+              <div
+                className={styles.Content_Page3}
+                onMouseEnter={handleHoverPage3}
+                onMouseLeave={handleLeave}
+              ></div>
+              <div className={styles.Content_Txt}>
+                나만의 티켓, 예매 등 영화 종합 플랫폼
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className={styles.Contents}>
           <div className={styles.Content_Number2}>04</div>
