@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 gsap.registerPlugin(ScrollTrigger);
 import styles from '../../styles/main/introProject.module.css';
+import Modal from '../using/Modal';
 
 const IntroProject: React.FC = () => {
   const TxtRef1 = useRef(null);
@@ -12,6 +13,11 @@ const IntroProject: React.FC = () => {
   const TxtRef4 = useRef(null);
   const BtnRef = useRef(null);
   const [btnText, setBtnText] = useState('프로젝트 클릭하여 자세히보기');
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModla = () => {
+    setModalOpen(true);
+  };
 
   useEffect(() => {
     const Text1 = TxtRef1.current;
@@ -99,21 +105,26 @@ const IntroProject: React.FC = () => {
       <div className={styles.Content_Layout}>
         <div className={styles.Contents}>
           <div className={styles.Content_Number1}>01</div>
-          <Link
+          {/* <Link
             href={'https://hoonikim.github.io/%ED%9A%8C%EA%B3%A0/PreProject/'}
+          > */}
+          <div
+            className={styles.Content_Box}
+            ref={TxtRef1}
+            onClick={handleModla}
           >
-            <div className={styles.Content_Box} ref={TxtRef1}>
-              <div className={styles.Content_Title}>01. StackOverFlow</div>
-              <div
-                className={styles.Content_Page1}
-                onMouseEnter={handleHoverPage1}
-                onMouseLeave={handleLeave}
-              ></div>
-              <div className={styles.Content_Txt}>
-                Stack Over Flow 구현 프로젝트
-              </div>
+            <div className={styles.Content_Title}>01. StackOverFlow</div>
+            <div
+              className={styles.Content_Page1}
+              onMouseEnter={handleHoverPage1}
+              onMouseLeave={handleLeave}
+            ></div>
+            <div className={styles.Content_Txt}>
+              Stack Over Flow 구현 프로젝트
             </div>
-          </Link>
+          </div>
+          {modalOpen && <Modal setModalOpen={setModalOpen} />}
+          {/* </Link> */}
         </div>
         <div className={styles.Contents}>
           <div className={styles.Content_Number2}>02</div>
