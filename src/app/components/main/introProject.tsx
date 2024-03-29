@@ -117,7 +117,7 @@ const IntroProject: React.FC = () => {
                 'stackoverflow 페이지를 정해진 기간 내에 똑같이 구현해내는 프로젝트'
               }
               stack={'stack1'}
-              role={'로그인, 회원가입, Footer, 재사용컴포넌트'}
+              role={'로그인, 회원가입, Footer, 재사용컴포넌트 제작'}
               linkUrl={
                 'http://underdog15.s3-website.ap-northeast-2.amazonaws.com/'
               }
@@ -194,7 +194,7 @@ const IntroProject: React.FC = () => {
               }
               stack={'stack2'}
               role={
-                '화면 설계, 로그인, 회원가입, CRUD, 예매 자동화, 공공API 등 프론트 개발 전반'
+                '화면 설계, 로그인, 나만의 티켓 제작, CRUD, 예매 자동화, 공공API 등 프론트 개발 전반'
               }
               linkUrl={'https://omt-onmyticket.vercel.app/'}
               blogUrl={
