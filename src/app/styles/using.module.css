@@ -55,8 +55,9 @@
   background-color: white;
   color: black;
   position: relative;
-  padding: 1%;
+  padding: 2%;
 }
+
 .Modal_close {
   position: absolute;
   width: 2vw;
@@ -71,20 +72,79 @@
 .ProjectIMG {
   width: 90%;
   height: 30%;
+  border-bottom: 1px solid gray;
 }
 .Project_Content {
   width: 90%;
   height: 70%;
 }
-.Project_Simple {
-  padding-top: 5%;
-  border-top: 1px solid gray;
+
+.Project_Txt {
+  display: flex;
   width: 100%;
-  height: 40%;
 }
+.Project_Txt1 {
+  width: 20%;
+}
+.Project_Txt2 {
+  width: 80%;
+}
+
+.Project_Txt > p {
+  color: black;
+}
+
+.Project_Simple {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.Project_Simple_Info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Project_Simple_Link {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.LinkForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+.LinkForm1 {
+  color: rgb(171, 169, 169);
+  font-weight: 700;
+}
+.LinkForm2 {
+  width: 2vw;
+  cursor: pointer;
+}
+.LinkForm:hover > .LinkForm2 {
+  transform: scale(1.3);
+  transition-duration: 1s;
+}
+.LinkForm:hover > .LinkForm1 {
+  color: black;
+  transition-duration: 1s;
+}
+
 .Project_Detail {
-  padding-top: 5%;
+  padding: 3% 0;
   border-top: 1px solid gray;
   width: 100%;
-  height: 60%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.StackIMG {
+  width: 15vw;
 }
