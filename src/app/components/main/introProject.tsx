@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Link from 'next/link';
+
 gsap.registerPlugin(ScrollTrigger);
 import styles from '../../styles/main/introProject.module.css';
 import Modal from '../using/Modal';
@@ -35,50 +35,22 @@ const IntroProject: React.FC = () => {
   };
 
   useEffect(() => {
-    const Text1 = TxtRef1.current;
-    const Text2 = TxtRef2.current;
-    const Text3 = TxtRef3.current;
-    const Text4 = TxtRef4.current;
+    const animateText = (ref: any, xOffset: any) => {
+      gsap.to(ref.current, {
+        xPercent: xOffset,
+        scrollTrigger: {
+          trigger: ref.current,
+          start: '30% center',
+          end: '+= 500',
+          scrub: true,
+          anticipatePin: 1
+        }
+      });
+    };
 
-    gsap.to(Text1, {
-      xPercent: 200,
-      scrollTrigger: {
-        trigger: Text1,
-        start: '30% center',
-        end: '+= 500',
-        scrub: true,
-        anticipatePin: 1
-      }
-    });
-    gsap.to(Text2, {
-      xPercent: -200,
-      scrollTrigger: {
-        trigger: Text2,
-        start: '30% center',
-        end: '+= 500',
-        scrub: true,
-        anticipatePin: 1
-      }
-    });
-    gsap.to(Text3, {
-      xPercent: 200,
-      scrollTrigger: {
-        trigger: Text3,
-        start: '30% center',
-        end: '+= 500',
-        scrub: true,
-        anticipatePin: 1
-      }
-    });
-    gsap.to(Text4, {
-      xPercent: -200,
-      scrollTrigger: {
-        trigger: Text4,
-        start: '30% center',
-        end: '+= 500',
-        scrub: true,
-        anticipatePin: 1
-      }
+    [TxtRef1, TxtRef2, TxtRef3, TxtRef4].forEach((ref, index) => {
+      const xOffset = index % 2 === 0 ? 200 : -200;
+      animateText(ref, xOffset);
     });
   }, []);
 
@@ -120,7 +92,6 @@ const IntroProject: React.FC = () => {
       <div className={styles.Content_Layout}>
         <div className={styles.Contents}>
           <div className={styles.Content_Number1}>01</div>
-
           <div
             className={styles.Content_Box}
             ref={TxtRef1}
@@ -260,7 +231,7 @@ const IntroProject: React.FC = () => {
               role={'-'}
               linkUrl={'https://who-is-se-hoon.vercel.app/'}
               blogUrl={
-                'https://hoonikim.github.io/%ED%9A%8C%EA%B3%A0/PreProject/'
+                'https://hoonikim.github.io/%ED%9A%8C%EA%B3%A0/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/'
               }
               githubUrl={'https://github.com/Hoonikim/Who.is.SeHoon'}
             />
